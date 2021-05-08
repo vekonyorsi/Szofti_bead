@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
+   <children>
+      <Circle fill="#1f93ff00" layoutX="300.0" layoutY="215.0" radius="100.0" stroke="#00000002" strokeType="INSIDE" />
+       <Button fx:id="gomb1" layoutX="285.0" layoutY="100.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="1" />
+       <Button fx:id="gomb2" layoutX="332.0" layoutY="115.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="5" />
+       <Button fx:id="gomb3" layoutX="370.0" layoutY="146.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="6" />
+       <Button fx:id="gomb4" layoutX="385.0" layoutY="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="4" />
+       <Button fx:id="gomb5" layoutX="370.0" layoutY="247.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="8" />
+       <Button fx:id="gomb6" layoutX="332.0" layoutY="283.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="6b" />
+       <Button fx:id="gomb7" layoutX="285.0" layoutY="299.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="4b" />
+       <Button fx:id="gomb8" layoutX="235.0" layoutY="283.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="3" />
+       <Button fx:id="gomb9" layoutX="200.0" layoutY="252.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="1b" />
+       <Button fx:id="gomb10" layoutX="185.0" layoutY="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="2" />
+       <Button fx:id="gomb11" layoutX="195.0" layoutY="146.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="2b" />
+       <Button fx:id="gomb12" layoutX="235.0" layoutY="115.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="8b" />
+
+
+   </children>
+</AnchorPane>

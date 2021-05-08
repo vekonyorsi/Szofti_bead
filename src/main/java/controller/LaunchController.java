@@ -35,5 +35,13 @@ public class LaunchController {
             errorLabelP2.setText("Player2 is empty!");
         }
 
+        if (!player1Textfield.getText().isEmpty() && !player2Textfield.getText().isEmpty()){
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/game.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+
+        }
     }
 }
