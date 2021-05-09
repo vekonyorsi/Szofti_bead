@@ -11,23 +11,23 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.IOException;
 
 @Slf4j
 public class LaunchController {
 
     @FXML
-    private TextField player1Textfield;
+    TextField player1Textfield;
     @FXML
-    private TextField player2Textfield;
+    TextField player2Textfield;
 
     @FXML
     private Label errorLabelP1;
     @FXML
     private Label errorLabelP2;
+    
 
+    public void startAction(ActionEvent actionEvent) throws Exception {
 
-    public void startAction(ActionEvent actionEvent) throws IOException {
         if (player1Textfield.getText().isEmpty()) {
             errorLabelP1.setText("Player1 is empty!");
         }
@@ -43,5 +43,9 @@ public class LaunchController {
             stage.show();
 
         }
+
     }
+
+
+
 }
