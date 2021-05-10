@@ -33,27 +33,27 @@ public class Game2Controller {
     Label p2_pont;
 
     @FXML
-    Button uj1;
+    Button uj_1;
     @FXML
-    Button uj2;
+    Button uj_2;
     @FXML
-    Button uj3;
+    Button uj_3;
     @FXML
-    Button uj4;
+    Button uj_4;
     @FXML
-    Button uj5;
+    Button uj_5;
     @FXML
-    Button uj6;
+    Button uj_6;
     @FXML
-    Button uj7;
+    Button uj_7;
     @FXML
-    Button uj8;
+    Button uj_8;
     @FXML
-    Button uj9;
+    Button uj_9;
     @FXML
-    Button uj10;
+    Button uj_10;
     @FXML
-    Button uj11;
+    Button uj_11;
 
     Button gomb;
 
@@ -68,17 +68,23 @@ public class Game2Controller {
 
     public void gameAction(ActionEvent actionEvent){
         gomb = (Button)actionEvent.getSource();
-        System.out.println(gomb.getText());
+        gomb.getText();
+
+        System.out.println(gomb.getId());
         gomb.setVisible(false);
         if(currentPlayer.equals(play1)){
             p1.setTextFill(javafx.scene.paint.Color.BLACK);
             p2.setTextFill(javafx.scene.paint.Color.GREEN);
             currentPlayer = play2;
+            int ertek = Integer.parseInt(p1_pont.getText()) + Integer.parseInt(gomb.getText());
+            p1_pont.setText(Integer.toString(ertek));
         }
         else{
             p2.setTextFill(javafx.scene.paint.Color.BLACK);
             p1.setTextFill(javafx.scene.paint.Color.GREEN);
             currentPlayer = play1;
+            int ertek = Integer.parseInt(p2_pont.getText()) + Integer.parseInt(gomb.getText());
+            p2_pont.setText(Integer.toString(ertek));
         }
         //switchPlayer();
     }

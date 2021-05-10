@@ -8,17 +8,17 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Game2Controller">
    <children>
-      <Button fx:id="uj1" layoutX="82.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
-      <Button fx:id="uj2" layoutX="122.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
-      <Button fx:id="uj3" layoutX="162.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
-      <Button fx:id="uj4" layoutX="202.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
-      <Button fx:id="uj5" layoutX="242.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
-      <Button fx:id="uj6" layoutX="282.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
-      <Button fx:id="uj7" layoutX="322.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
-      <Button fx:id="uj8" layoutX="362.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
-      <Button fx:id="uj9" layoutX="402.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
-      <Button fx:id="uj10" layoutX="442.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
-      <Button fx:id="uj11" layoutX="482.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
+      <Button fx:id="uj_1" layoutX="82.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
+      <Button fx:id="uj_2" layoutX="122.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
+      <Button fx:id="uj_3" layoutX="162.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
+      <Button fx:id="uj_4" layoutX="202.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
+      <Button fx:id="uj_5" layoutX="242.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
+      <Button fx:id="uj_6" layoutX="282.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
+      <Button fx:id="uj_7" layoutX="322.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
+      <Button fx:id="uj_8" layoutX="362.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
+      <Button fx:id="uj_9" layoutX="402.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
+      <Button fx:id="uj_10" layoutX="442.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
+      <Button fx:id="uj_11" layoutX="482.0" layoutY="180.0" mnemonicParsing="false" onAction="#gameAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #3fff2f; -fx-background-radius: 100; -fx-text-fill: #000000;" text="0" />
       <Text layoutX="75.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pontszam:" wrappingWidth="74.39999999999986">
          <font>
             <Font size="15.0" />
