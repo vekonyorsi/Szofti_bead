@@ -45,14 +45,12 @@ public class LaunchController {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/game.fxml"));
             Parent root = fxmlLoader.load();
             fxmlLoader.<GameController>getController().initdata(player1Textfield.getText());
+            fxmlLoader.<GameController>getController().initdata2(player2Textfield.getText());
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
 
         }
-
     }
-
-
 
 }

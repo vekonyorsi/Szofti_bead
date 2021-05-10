@@ -10,9 +10,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import lombok.extern.slf4j.Slf4j;
 import java.util.ArrayList;
+
+import controller.Game2Controller;
 
 
 @Slf4j
@@ -46,10 +49,18 @@ public class GameController {
     private Label kezdo;
 
     private String player1;
+    private String player2;
 
+    @FXML
+    TextField p1Textfield;
+    @FXML
+    TextField p2Textfield;
+
+    @FXML
+    Button elso;
 
     int kezdok[] = {1, 5, 6, 4, 8, 6, 4, 3, 1, 2, 2, 8};
-    ArrayList<Integer> lanc= new ArrayList<Integer>();
+    ArrayList<Integer> lanc = new ArrayList<Integer>();
 
     public void nyitAction(ActionEvent actionEvent) throws Exception {
         String gomb = ((Button) actionEvent.getSource()).getId();
@@ -66,8 +77,25 @@ public class GameController {
             lanc.add(kezdok[j]);
         }
 
+        System.out.println(lanc);
+
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/game2.fxml"));
         Parent root = fxmlLoader.load();
+        fxmlLoader.<Game2Controller>getController().initdatap1(player1);
+        fxmlLoader.<Game2Controller>getController().initdatap2(player2);
+
+        fxmlLoader.<Game2Controller>getController().p1_pont.setText(((Button) actionEvent.getSource()).getText());
+        fxmlLoader.<Game2Controller>getController().uj1.setText(String.valueOf(lanc.get(0)));
+        fxmlLoader.<Game2Controller>getController().uj2.setText(String.valueOf(lanc.get(1)));
+        fxmlLoader.<Game2Controller>getController().uj3.setText(String.valueOf(lanc.get(2)));
+        fxmlLoader.<Game2Controller>getController().uj4.setText(String.valueOf(lanc.get(3)));
+        fxmlLoader.<Game2Controller>getController().uj5.setText(String.valueOf(lanc.get(4)));
+        fxmlLoader.<Game2Controller>getController().uj6.setText(String.valueOf(lanc.get(5)));
+        fxmlLoader.<Game2Controller>getController().uj7.setText(String.valueOf(lanc.get(6)));
+        fxmlLoader.<Game2Controller>getController().uj8.setText(String.valueOf(lanc.get(7)));
+        fxmlLoader.<Game2Controller>getController().uj9.setText(String.valueOf(lanc.get(8)));
+        fxmlLoader.<Game2Controller>getController().uj10.setText(String.valueOf(lanc.get(9)));
+        fxmlLoader.<Game2Controller>getController().uj11.setText(String.valueOf(lanc.get(10)));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
@@ -76,6 +104,11 @@ public class GameController {
     public void initdata(String player1) {
         this.player1 = player1;
         kezdo.setText("Kezdő játékos: " + this.player1);
+    }
+
+    public void initdata2(String player2) {
+        this.player2 = player2;
+
     }
 
 
