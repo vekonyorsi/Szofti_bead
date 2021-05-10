@@ -31,13 +31,20 @@ public class LaunchController {
         if (player1Textfield.getText().isEmpty()) {
             errorLabelP1.setText("Player1 is empty!");
         }
+        else {
+            errorLabelP1.setText("");
+        }
         if (player2Textfield.getText().isEmpty()) {
             errorLabelP2.setText("Player2 is empty!");
+        }
+        else {
+            errorLabelP2.setText("");
         }
 
         if (!player1Textfield.getText().isEmpty() && !player2Textfield.getText().isEmpty()){
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/game.fxml"));
             Parent root = fxmlLoader.load();
+            fxmlLoader.<GameController>getController().initdata(player1Textfield.getText());
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
